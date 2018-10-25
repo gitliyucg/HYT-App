@@ -1,0 +1,109 @@
+<div id="Info">
+    <p class="userID">{{userid}}</p>
+    <p class="name">{{name}}</p>
+</div>
+<div class="announcement-wrap">
+    <!--热议-->
+    <div class="announcement pad">
+        <i class="png"><img src="../../assets/img/reyi.png" alt=""></i>
+        <div class="hot pad">
+            <ul>
+                <li routerLink="/ann/view/{{item['ID']}}" *ngFor="let item of ann"><a><span class="reyi">热议</span><span>{{item.Title}}</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--热议-->
+</div>
+<div class="body-content">
+    <!--币值图表-->
+    <div class="bizhiwrap pad">
+        <div id="BiZhi" style="width: 100%; height: 320px; padding-top: 20px"></div>
+        <p>当前汇率</p>
+        <h4>{{bizhi | number: '1.2-5'}}</h4>
+    </div>
+    <!--币值图表-->
+
+    <!--钱包-->
+    <div id="Wallet">
+        <ul>
+            <li class="pad">
+                <p>
+                    <i class="icon iconfont i5">&#xe668;</i>
+                    <span>数字资产</span>
+                </p>
+                <p>
+                    <strong class="pull-right">{{zichan}}</strong>
+                </p>
+            </li>
+            <li class="pad">
+                <p>
+                    <i class="icon iconfont i1">&#xe610;</i>
+                    <span>储存HYT</span>
+                </p>
+                <p>
+                    <strong class="pull-right">{{cunchu | number:'1.0-4'}}</strong>
+                </p>
+            </li>
+            <li class="pad">
+                <p>
+                    <i class="icon iconfont i6">&#xe607;</i>
+                    <span>流通HYT</span>
+                </p>
+                <p>
+                    <strong class="pull-right">{{bi | number:'1.0-4'}}</strong>
+                </p>
+            </li>
+            <li class="pad">
+                <p>
+                    <i class="icon iconfont i3">&#xe62d;</i>
+                    <span>可用积分</span>
+                </p>
+                <p>
+                    <strong class="pull-right">{{moneys}}</strong>
+                </p>
+            </li>
+            <li class="pad">
+                <p>
+                    <i class="icon iconfont">&#xe61b;</i>
+                    <span>待释放HYT</span>
+                </p>
+                <p>
+                    <strong class="pull-right">{{daisf}}</strong>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <p class="xian"></p>
+        <h3 style="text-align: center; font-size: 20px;margin-top: 0; color: #3d86d6">邀请好友</h3>
+        <p><input type="text" class="form-control" value="{{value}}" id="copy" readonly="readonly"></p>
+        <p>
+            <button class="btn btn-primary col-xs-12" (click)="copy()" ngxClipboard [cbContent]="value">复制链接</button>
+        </p>
+        <div class="erweima" style="text-align: center;">
+            <ngx-qrcode [qrc-value]="value" qrc-class="qrclass" qrc-errorCorrectionLevel="L"></ngx-qrcode>
+        </div>
+    </div>
+    <!--钱包-->
+    <!--<div id="AdminMain">-->
+        <!--<div class="head">-->
+            <!--<div class="ann">-->
+                <!--<div><i class="ititle"></i>设置</div>-->
+                <!--<br>-->
+                <!--<div *ngIf="switch==0">-->
+                    <!--<button class="btn btn-success" (click)="stop($event)">存储HYT转化开启中</button>-->
+                <!--</div>-->
+                <!--<div *ngIf="switch==1">-->
+                    <!--<button class="btn btn-danger" (click)="open($event)">储存HYT转化已停止</button>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;<div class="infolist" *ngFor="let x of ann;">&ndash;&gt;-->
+                <!--&lt;!&ndash;<div><a routerLink="/admin/ann/view/{{x.ID}}">{{x.Title}}</a><span>{{GetTimes(x.Times)}}</span></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+    <!--</div>-->
+    <app-footer></app-footer>
+</div>
+<app-bottomnav></app-bottomnav>

@@ -1,0 +1,189 @@
+/*-----------------------------------------------------webApp----------------------------------------------------------------*/
+a{
+    color: #333333;
+}
+#Info {
+    width: 100%;
+    height: 150px;
+    background-color: #2772ff;
+    text-align: center;
+    padding-top: 45px;
+}
+
+#Info p {
+    color: white;
+}
+
+#Info .userID {
+    font-size: 22.61px;
+}
+
+#Info .name {
+    font-size: 16.9px;
+}
+
+.announcement-wrap{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.announcement {
+    width: 100%;
+    height: 25px;
+    background: white;
+    border-radius: 5px;
+    margin-top: -10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.announcement .png {
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.announcement .png img {
+    width: 25px;
+    height: 20px;
+}
+
+.hot {
+    display: inline-block;
+    position: relative;
+    height: 25px;
+    line-height: 25px;
+}
+
+.hot ul li {
+    list-style: none;
+    margin: 0;
+    line-height: 25px;
+    font-size: 12px;
+}
+
+.hot ul li a span{
+    vertical-align: middle;
+}
+
+.hot ul li a span:nth-child(2) {
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.reyi {
+    color: #e55318;
+    display: inline-block;
+    border: 1px solid #e55318;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.bizhiwrap {
+    width: 100%;
+    height: 440px;
+    background: #ffffff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.bizhiwrap p {
+    text-align: center;
+    color: #e1453d;
+    font-size: 14px;
+}
+
+.bizhiwrap h4 {
+    padding-top: 20px;
+    font-size: 40px;
+    text-align: center;
+    color: #e65446;
+}
+
+#Wallet {
+    width: 100%;
+}
+
+#Wallet ul li {
+    width: 100%;
+    height: 140px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#Wallet ul li:nth-child(1) {
+    background: -webkit-linear-gradient(left, #20d0fe, #4b8dff); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #20d0fe, #4b8dff); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #20d0fe, #4b8dff); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #20d0fe, #4b8dff); /* 标准的语法 */
+}
+
+#Wallet ul li:nth-child(2) {
+    background: -webkit-linear-gradient(left, #f27258, #d5252a); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #f27258, #d5252a); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #f27258, #d5252a); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #f27258, #d5252a); /* 标准的语法 */
+}
+
+#Wallet ul li:nth-child(3) {
+    background: -webkit-linear-gradient(left, #ffdd00, #ff9717); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #ffdd00, #ff9717); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #ffdd00, #ff9717); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #ffdd00, #ff9717); /* 标准的语法 */
+}
+
+#Wallet ul li:nth-child(4) {
+    background: -webkit-linear-gradient(left, #0adfa7, #05a383); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #0adfa7, #05a383); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #0adfa7, #05a383); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #0adfa7, #05a383); /* 标准的语法 */
+}
+
+#Wallet ul li:nth-child(5) {
+    background: -webkit-linear-gradient(left, #ff9908, #ff187b); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #ff9908, #ff187b); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #ff9908, #ff187b); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #ff9908, #ff187b); /* 标准的语法 */
+}
+
+#Wallet ul li p {
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    line-height: 70px;
+}
+
+#Wallet ul li p i {
+    font-size: 45px !important;
+    color: white;
+    vertical-align: middle;
+}
+#Wallet ul li p span{
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+#Wallet ul li p strong{
+    font-size: 32px;
+    color: white;
+}
+.xian{
+    border-top: 1px solid #d9d9d9;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+.qrclass{
+    padding-top: 50px;
+
+}
+/*-----------------------------------------------------webApp----------------------------------------------------------------*/
+
+

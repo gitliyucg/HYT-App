@@ -1,0 +1,44 @@
+<app-header></app-header>
+<div class="body-content">
+    <form [formGroup]="formModel">
+        <div class="form-group oneline"
+             [class.has-error]="formModel.get('oldPass').touched && formModel.get('oldPass').invalid">
+            <span>原二级密码</span>
+            <input formControlName="oldPass" type="password" placeholder="原二级密码为六位数字"/>
+        </div>
+
+        <div>
+            <span class="field-validation-valid text-danger"
+                  *ngIf="formModel.get('oldPass').touched && formModel.get('oldPass').invalid">二级密码为六位数字</span>
+        </div>
+
+        <div class="form-group oneline"
+             [class.has-error]="formModel.get('PassWord').touched && formModel.get('PassWord').invalid">
+            <span>新二级密码</span>
+            <input formControlName="PassWord" type="password" placeholder="新二级密码为六位数字"/>
+        </div>
+
+        <div>
+            <span class="field-validation-valid text-danger"
+                  *ngIf="formModel.get('PassWord').touched && formModel.get('PassWord').invalid">二级密码为六位数字</span>
+        </div>
+
+        <div class="form-group oneline"
+             [class.has-error]="formModel.get('Confirm').touched && formModel.get('Confirm').invalid">
+            <span>确认密码</span>
+            <input formControlName="Confirm" type="password" placeholder="请重新输入密码"/>
+        </div>
+
+        <div>
+            <span class="field-validation-valid text-danger"
+                  *ngIf="formModel.get('Confirm').touched && formModel.get('Confirm').invalid">两次密码不一致</span>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-success" style="width: 100%" (click)="onSubmit($event)" [disabled]="formModel.invalid">修改
+            </button>
+        </div>
+    </form>
+
+    <app-footer></app-footer>
+</div>

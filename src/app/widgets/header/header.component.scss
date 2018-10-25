@@ -1,0 +1,35 @@
+.goback{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    height: 45px;
+    background: #ffffff;
+    padding: 0 10px 0 10px;
+    z-index: 9999999;
+}
+.icon{
+    display: inline-block;
+    width: 5px;
+    height: 10px;
+    vertical-align: middle;
+    background-image: url("../../../assets/img/breadcrumb.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); /* Internet Explorer */
+    -moz-transform:rotate(180deg); /* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg); /* Opera */
+}
+.goback div {
+    flex: 1;
+    line-height: 45px;
+}
+.goback div:nth-child(2){
+    flex: 2 !important;
+}
+.goback div span{
+    font-size: 16px;
+}

@@ -1,0 +1,48 @@
+@media (max-width: 768px) {
+    img {
+        height: 60px;
+    }
+}
+
+.body-content {
+    padding-top: 45px;
+    padding-bottom: 0px;
+}
+.oneline{
+    display: flex;
+}
+.oneline span{
+    flex: 1;
+    font-weight: 600;
+    font-size: 20px;
+}
+.oneline input{
+    flex: 2;
+    text-align: right;
+}
+.jine {
+    font-size: 20px;
+}
+
+.filess {
+    position: relative;
+    width: 100%;
+}
+
+.filess input {
+    opacity: 0;
+    width: 27.08333rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.filess button {
+    z-index: 1;
+    position: absolute;
+}
+
+.filess span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}

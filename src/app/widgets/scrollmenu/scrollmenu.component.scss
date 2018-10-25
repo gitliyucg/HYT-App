@@ -1,0 +1,52 @@
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.wrapper {
+    display: block;
+    height: 45px;
+    width: 100%;
+    //margin-top: 45px;
+}
+
+.wrapper .scroller li {
+    height: 45px;
+    width: 25%;
+    color: #333;
+    float: left;
+    line-height: 45px;
+    text-align: center
+}
+
+.wrapper .scroller li a {
+    color: #333;
+    display: block;
+    font-size: 14px;
+}
+
+.wrapper .scroller li .cur {
+    color: #2772ff;
+    font-size: 20px;
+    border-bottom: 1px solid #2772ff;
+    transition:font-size .5s;
+    -moz-transition:font-size .5s; /* Firefox 4 */
+    -webkit-transition:font-size .5s; /* Safari and Chrome */
+    -o-transition:font-size .5s; /* Opera */
+}
+
+@media screen and (max-width: 320px){
+    .wrapper .scroller li a {
+        font-size: 12px;
+    }
+    .wrapper .scroller li .cur {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,51 @@
+.avatar{
+    width: 100%;
+    height: 150px;
+    background: #ffffff;
+    position: relative;
+}
+.avatar .wrap{
+    position: absolute;
+    text-align: center;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%)
+}
+.avatar .herder{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 85px;
+    background: #e5e4e8;
+}
+.avatar p{
+    padding-top: 10px;
+}
+.action{
+    margin: 20px 0 20px 0;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    background: #ffffff;
+    border-top: 1px solid #e5e4e8;
+    border-bottom: 1px solid #e5e4e8;
+}
+.action p{
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+.action p span {
+    display: inline-block;
+    width: 5px; height: 10px;
+    background-image: url("../../assets/img/breadcrumb.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+.dropout{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #ffffff;
+}

@@ -1,0 +1,125 @@
+#bottomNav{
+    width: 100%;
+    height: 46px;
+    position: fixed;
+    bottom: -2px !important;
+    display: flex;
+    background: white;
+    border-top: 1px solid #7f7f7f;
+    z-index: 2147483647 !important;
+}
+#bottomNav a{
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 1px;
+}
+#bottomNav .image1{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../../assets/img/首页—未选中.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+#bottomNav .image2{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../../assets/img/团队管理—未选中.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+#bottomNav .image3{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../../assets/img/交易管理—未选中.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+#bottomNav .image4{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../../assets/img/个人中心—为选中.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+#bottomNav .image5{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../../assets/img/交易--未选中.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+#bottomNav a p{
+    color: #808080;
+    font-size: 10px;
+}
+#bottomNav .class1{
+    .image1{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../../../assets/img/首页—选中.png");
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+    p{
+        color: #2772ff;
+    }
+}
+#bottomNav .class2{
+    .image2{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../../../assets/img/团队管理—选中.png");
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+    p{
+        color: #2772ff;
+    }
+}
+#bottomNav .class3{
+    .image3{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../../../assets/img/交易管理—选中.png");
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+    p{
+        color: #2772ff;
+    }
+}
+#bottomNav .class4{
+    .image4{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../../../assets/img/个人中心—选中.png");
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+    p{
+        color: #2772ff;
+    }
+}
+#bottomNav .class5{
+    .image5{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../../../assets/img/交易--选中.png");
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+    p{
+        color: #2772ff;
+    }
+}

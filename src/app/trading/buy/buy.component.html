@@ -1,0 +1,59 @@
+<app-header></app-header>
+<div class="body-content" *ngIf="view">
+    <div class="table-responsive" style="margin-top: 10px">
+        <table class="table table-striped">
+            <tr class="row trad-tab-head">
+                <th class="col-xs">
+                    卖家
+                </th>
+                <th class="col-xs">
+                    数量
+                </th>
+                <th class="col-xs">
+                    限额
+                </th>
+                <th class="col-xs">
+                    单价
+                </th>
+                <th class="col-xs">
+                    交易方式
+                </th>
+            </tr>
+
+            <tr class="row">
+                <td>{{model.UserName}}</td>
+                <td>{{model.Numbers}}
+                    <small>HYT</small>
+                </td>
+                <td>{{model.Mins}} - {{model.Maxs}} RMB</td>
+                <td><strong class="text-success" style="font-size: 16px;">{{model.Price}}
+                    <small>RMB</small>
+                </strong></td>
+                <td>银行转账</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="form-inline">
+        <div class="form-group oneline" style="margin-bottom: 0!important;">
+            <span>购买</span>
+            <input [ngModel]="Mei" (input)="mei($event)" placeholder="购买枚数"/>
+        </div>
+        <div class="form-group oneline" style="border: none;">
+            <p style="text-align: right; color: #cccccc; width: 100%">= {{yuan}} 元</p>
+        </div>
+        <div class="form-group oneline" style="border: none">
+            <button style="width: 100%" class="btn btn-primary" (click)="onSubmit($event)">下单</button>
+        </div>
+    </div>
+    <br/>
+    <div class="text-muted">
+        <p>提醒：</p>
+        <p>1.订单时限为30分钟，如果你不能及时付款，系统将自动取消这笔交易。</p>
+        <p>2.如果账户内出现多次超时未付款订单，可能会被视为恶意操作，系统有权决定冻结账户或扣除恶意操作所造成的损失。</p>
+    </div>
+
+    <app-footer></app-footer>
+</div>
+<app-bottomnav></app-bottomnav>
+

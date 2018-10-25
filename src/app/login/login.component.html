@@ -1,0 +1,22 @@
+<div class="back">
+    <div id="login">
+        <div class="logo">
+            <img src="../../assets/img/logo.png" alt="">
+            <img src="../../assets/img/11.png" alt="">
+            <img src="../../assets/img/22.png" alt="">
+        </div>
+        <form class="butouming" [formGroup]="formModel">
+            <div>
+                <label class="iconfont icon-shouji-copy"></label>
+                <input type="text" placeholder="用户名" formControlName="u" autocomplete="off">
+            </div>
+            <div>
+                <label class="iconfont icon-mima"></label>
+                <input type="password" placeholder="密码" formControlName="p" autocomplete="off">
+            </div>
+            <button (click)="signIn($event)" (keydown)="signIn($event)" id="sign" [disabled]="formModel.invalid">
+                登录
+            </button>
+        </form>
+    </div>
+</div>

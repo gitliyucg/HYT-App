@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div class="body-content">
+
+    <ul *ngFor="let x of model; let i = index">
+        <li class="time">{{GetTimes(x.Times)}}</li>
+        <li class="annlist" routerLink="view/{{x.ID}}">
+            <p class="title">{{x.Title}}</p>
+            <p class="view">
+                <span>查看详情</span>
+                <i class="pull-right"></i>
+            </p>
+        </li>
+    </ul>
+
+    <div class="pagebar">
+        <div class="page">
+            <app-pagination conf="Pagination"></app-pagination>
+        </div>
+    </div>
+
+    <app-footer></app-footer>
+</div>

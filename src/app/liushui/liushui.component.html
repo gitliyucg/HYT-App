@@ -1,0 +1,66 @@
+<app-header></app-header>
+<div class="body-content">
+    <div class="form-inline">
+        <div class="form-group">
+            <div class="oneline" style="margin-bottom: 10px">
+                <span>记录时间</span>
+                <input type="text" class="bsrp-time" placeholder="开始日期" (blur)="setSD($event.target.value)">
+            </div>
+            <div class="oneline">
+                <span>至</span>
+                <input type="text" class="bsrp-time" placeholder="结束日期" (blur)="setED($event.target.value)">
+            </div>
+        </div>
+        <button class="btn btn-info" (click)="serach()">搜索</button>
+    </div>
+    <br>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <tr class="row head">
+                <th class="col-xs-2">
+                    记录日期
+                </th>
+                <th class="col-xs-1">
+                    交易方
+                </th>
+                <th class="col-xs-2">
+                    账单说明
+                </th>
+                <th class="col-xs-1">
+                    币值
+                </th>
+                <th class="col-xs-2">
+                    收入
+                </th>
+                <th class="col-xs-1">
+                    支出
+                </th>
+                <th class="col-xs-1">
+                    余额
+                </th>
+                <th class="col-xs-1">
+                    货币类型
+                </th>
+            </tr>
+
+            <tr class="row" *ngFor="let x of model; let i = index">
+                <td>{{GetTimes(x.Times)}}</td>
+                <td>{{x.Who}}</td>
+                <td>{{x.Reason}}</td>
+                <td>{{x.Bi}}</td>
+                <td><span [class.text-success]="x.ShouRu > 0"
+                          [class.lead]="x.ShouRu > 0">{{x.ShouRu | number:'1.0-4'}}</span></td>
+                <td><span [class.text-danger]="x.ZhiChu">{{x.ZhiChu | number:'1.0-4'}}</span></td>
+                <td>{{x.Balance | number:'1.0-4'}}</td>
+                <td>{{x.MoneyType}}</td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="pagebar">
+        <div class="page">
+            <app-pagination conf="Pagination"></app-pagination>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>

@@ -1,0 +1,143 @@
+/*--------------------Login------------------------*/
+#login {
+    width: 620px;
+    height: 540px;
+    margin: 0 auto;
+    //padding-top: 70px;
+    margin-top: 70px !important;
+}
+
+.logo img{
+    display: block;
+    margin: 0 auto;
+}
+
+.logo img:nth-child(1){
+     display: block;
+     margin: 0 auto;
+     width: 75px;
+     height: 75px;
+ }
+
+.logo img:nth-child(2){
+    width: 65px;
+}
+
+.logo img:nth-child(3){
+    width: 150px;
+    margin-top: 15px;
+}
+
+.butouming{
+    margin-top: 55px;
+}
+
+#login input {
+    height: 40px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #c0c1c0;
+    outline: none;
+    font-size: 18px;
+    background-color: rgba(0,0,0,0);
+    color: #ffffff;
+}
+
+#login .butouming div{
+    position: relative;
+}
+
+#login .butouming div:nth-child(1){
+    padding-bottom: 60px;
+}
+
+#login .butouming div:nth-child(2){
+    padding-bottom: 10px;
+}
+
+#login .butouming div label{
+    position: absolute;
+    left: 0px;
+    top: 0;
+    z-index: 2;
+    width: 40px;
+    line-height: 40px;
+    color: #cdcdcd;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+#login .butouming div input{
+    position: absolute;
+    z-index: 1;
+    padding-left: 20px;
+}
+
+#sign{
+    display: inline-block;
+    width: 86%;
+    height: 35px;
+    background: #e7b133;
+    border: 0;
+    border-radius: 5px;
+    margin: 45px auto 0 auto;
+    margin-left: 7%;
+    color: #000000;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    //background-size: 100% 100%;
+    background: #ffffff;
+    overflow: hidden;
+    background-image: url("../../assets/img/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media screen and (max-width: 414px) {
+    #login {
+        width: 90%;
+        margin: 30% auto;
+    }
+    #login h2 {
+        font-size: 30px;
+    }
+    #login .Eng {
+        font-size: 26px;
+    }
+    #login .login-wrap {
+        padding: 13% 0;
+    }
+    #login .login-wrap-input p {
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #login {
+        margin-top: 80px;
+    }
+    #login h2 {
+        font-size: 26px;
+    }
+    #login h2 span {
+        padding: 0 10px 10px 10px;
+    }
+    #login .Eng {
+        font-size: 22px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .back {
+        background-size: 100% 100%;
+    }
+}

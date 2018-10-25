@@ -1,0 +1,24 @@
+<div class="avatar">
+    <div class="wrap">
+        <div class="herder">
+            <img src="../../assets/img/avatar.png" width="60" height="60" alt="">
+        </div>
+        <p>{{userid}}</p>
+    </div>
+</div>
+<div class="action">
+    <p routerLink="/info">绑定银行卡 <span class="pull-right"></span></p>
+</div>
+<div class="action">
+    <p routerLink="/editpass">修改密码 <span class="pull-right"></span></p>
+    <p routerLink="/second">修改二级密码 <span class="pull-right"></span></p>
+    <p (click)="shiming($event)">实名认证 <span class="pull-right"></span></p>
+</div>
+<div class="action">
+    <p routerLink="/ann">通知公告 <span class="pull-right"></span></p>
+    <p (click)="kefu($event)">联系客服 <span class="pull-right"></span></p>
+</div>
+<div class="dropout" (click)="exit()">
+    退出登录
+</div>
+<app-bottomnav></app-bottomnav>
